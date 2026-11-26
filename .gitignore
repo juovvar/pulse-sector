@@ -1,0 +1,31 @@
+# --- Sistema operativo ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+__MACOSX/
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# --- Temporales, cachés y logs ---
+*.tmp
+*.bak
+*.log
+.cache/
+node_modules/
+*.zip
+
+# --- Material de los packs de arte que el juego no usa ---
+# (las licencias public-license.txt, Readme.txt y Font.txt SÍ se versionan)
+*.psd
+assets/enemies/Hell-Hound-Files/Hell-Hound-Files/GIFS/
+assets/enemies/Hell-Hound-Files/Hell-Hound-Files/get-more.jpg

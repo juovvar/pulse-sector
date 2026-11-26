@@ -1,0 +1,44 @@
+/* Solo el juego: el lienzo ocupa toda la ventana (escalado "contain" desde main.js). */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.stage-wrap {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+#stage {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #000;
+  touch-action: none;
+  user-select: none;
+}
+
+/* Durante la partida el cursor nativo se sustituye por la mirilla dibujada en el canvas. */
+#stage.is-playing {
+  cursor: none;
+}
+
+/* Arrastrando un archivo de audio sobre la ventana. */
+.stage-wrap.is-dropping #stage {
+  outline: 2px dashed #38d4ff;
+  outline-offset: -2px;
+}
